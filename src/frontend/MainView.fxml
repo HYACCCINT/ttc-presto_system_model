@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.MainGUI">
+   <children>
+      <Button fx:id="adminLoginButton" layoutX="123.0" layoutY="176.0" mnemonicParsing="false" onAction="#displayAdminMain" text="AdminLogin" />
+      <Button fx:id="userLoginButton" layoutX="394.0" layoutY="176.0" mnemonicParsing="false" onAction="#displayUserLogin" text="UserLogin" />
+      <Button fx:id="userRegisterButton" layoutX="258.0" layoutY="176.0" mnemonicParsing="false" onAction="#displayUserRegister" text="UserRegister" />
+      <Button layoutX="183.0" layoutY="254.0" mnemonicParsing="false" onAction="#displayCardTapping" prefHeight="70.0" prefWidth="246.0" text="Card Tapping" />
+   </children>
+</AnchorPane>

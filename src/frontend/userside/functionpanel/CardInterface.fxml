@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="cardPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.userside.functionpanel.CardInterfaceController">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="700.0">
+         <children>
+            <ToolBar prefHeight="41.0" prefWidth="627.0">
+              <items>
+                  <Pane prefHeight="27.0" prefWidth="441.0">
+                     <children>
+                      <Button fx:id="returnButton" mnemonicParsing="false" onAction="#returnToUser" text="←" />
+                     </children>
+                  </Pane>
+              </items>
+            </ToolBar>
+            <Text fx:id="balanceText" layoutX="82.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="88.0" />
+            <Label layoutX="14.0" layoutY="54.0" text="Balance : " />
+            <Label layoutX="14.0" layoutY="102.0" text="Status : " />
+            <Text fx:id="statusText" layoutX="82.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="143.0" />
+            <Button fx:id="addBalanceButton" layoutX="193.0" layoutY="48.0" mnemonicParsing="false" onAction="#addBalance" prefHeight="30.0" prefWidth="35.0" text="+" />
+            <Button fx:id="suspendButton" layoutX="191.0" layoutY="100.0" mnemonicParsing="false" onAction="#suspendCard" text="Suspend" />
+            <ListView fx:id="recentTrips" layoutX="20.0" layoutY="179.0" prefHeight="302.0" prefWidth="546.0" />
+            <Label layoutX="14.0" layoutY="149.0" prefHeight="30.0" prefWidth="99.0" text="Recent Trips" />
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

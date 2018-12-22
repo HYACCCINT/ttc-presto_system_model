@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.adminside.functionpane.AuditInterfaceController">
+   <children>
+      <TabPane prefHeight="394.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Live Statistics">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="87.0" layoutY="36.0" text="Date" />
+                        <Label layoutX="50.0" layoutY="85.0" prefHeight="17.0" prefWidth="74.0" text="Total profit" />
+                        <Label layoutX="37.0" layoutY="143.0" text="Total Traffic" />
+                        <Label layoutX="25.0" layoutY="193.0" text="Busiest Stations" />
+                        <TextField fx:id="currentDate" layoutX="164.0" layoutY="31.0" />
+                        <TextField fx:id="totalProfit" layoutX="164.0" layoutY="80.0" />
+                        <TextField fx:id="totalTraffic" layoutX="164.0" layoutY="138.0" />
+                        <ListView fx:id="busiestStations" layoutX="164.0" layoutY="194.0" prefHeight="149.0" prefWidth="238.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="View Audit Reports">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <DatePicker fx:id="datePicker" layoutX="40.0" layoutY="32.0" onAction="#selectDate" promptText="Select a past date" />
+                        <TextArea fx:id="auditFileDisplayArea" editable="false" layoutX="40.0" layoutY="94.0" prefHeight="228.0" prefWidth="431.0" promptText="Please select a date to view the audit report of that day." />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

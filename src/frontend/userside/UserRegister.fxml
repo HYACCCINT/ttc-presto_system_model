@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="216.0" prefWidth="332.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.userside.UserRegisterController">
+   <children>
+      <Button fx:id="submitButton" layoutX="149.0" layoutY="154.0" mnemonicParsing="false" onAction="#registerUser" text="Register" />
+      <TextField fx:id="emailField" layoutX="95.0" layoutY="30.0" prefHeight="30.0" prefWidth="215.0" />
+      <TextField fx:id="usernameField" layoutX="95.0" layoutY="71.0" prefHeight="30.0" prefWidth="215.0" />
+      <TextField fx:id="passwordField" layoutX="95.0" layoutY="112.0" prefHeight="30.0" prefWidth="215.0" />
+      <Text layoutX="24.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" />
+      <Text layoutX="7.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:" />
+      <Text layoutX="7.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" />
+   </children>
+</AnchorPane>

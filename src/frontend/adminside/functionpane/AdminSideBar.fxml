@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="636.0" prefWidth="292.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.adminside.functionpane.AdminSideBarController">
+    <children>
+        <TabPane fx:id="userTab" layoutY="-2.0" prefHeight="642.0" prefWidth="289.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+            <Tab onSelectionChanged="#showAudit" text="Audit">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+                <Tab text="Routes">
+                    <content>
+                        <VBox>
+                            <children>
+                                <ListView fx:id="routeList" onMouseClicked="#routeListClick" prefHeight="514.0" prefWidth="289.0">
+                                    <contextMenu>
+                                        <ContextMenu fx:id="routeContextMenu">
+                                            <items>
+                                                <MenuItem mnemonicParsing="false" onAction="#editRoute" text="Edit" />
+                                            </items>
+                                        </ContextMenu>
+                                    </contextMenu>
+                                </ListView>
+                                <Pane prefHeight="63.0" prefWidth="289.0">
+                                    <children>
+                                        <Button fx:id="addTRouteButton" layoutX="6.0" layoutY="38.0" mnemonicParsing="false" onAction="#addTRouteFromInputClick" prefHeight="17.0" prefWidth="83.0" text="Add TrainRoute" textFill="#599a3d">
+                                            <font>
+                                                <Font size="9.0" />
+                                            </font>
+                                        </Button>
+                              <TextField fx:id="routeEditTextField" layoutX="6.0" layoutY="4.0" prefHeight="30.0" prefWidth="265.0" promptText="Enter Route Name" />
+                              <Button fx:id="addBRouteButton" layoutX="103.0" layoutY="38.0" mnemonicParsing="false" onAction="#addBRouteFromInputClick" prefHeight="19.0" prefWidth="77.0" text="Add BusRoute" textFill="#599a3d">
+                                 <font>
+                                    <Font size="9.0" />
+                                 </font>
+                              </Button>
+                                    </children>
+                                </Pane>
+                            </children>
+                        </VBox>
+                    </content>
+                </Tab>
+                <Tab text="Users">
+                    <content>
+                        <Pane>
+                            <children>
+                                <ListView fx:id="usersList" onMouseClicked="#userListClick" prefHeight="610.0" prefWidth="292.0">
+                                    <contextMenu>
+                                        <ContextMenu fx:id="userContextMenu">
+                                            <items>
+                                                <MenuItem mnemonicParsing="false" onAction="#userDetails" text="Details" />
+                                            </items>
+                                        </ContextMenu>
+                                    </contextMenu>
+                                </ListView>
+                            </children>
+                        </Pane>
+                    </content>
+                </Tab>
+            <Tab text="Stations">
+               <content>
+                  <VBox>
+                     <children>
+                        <ListView fx:id="stationListMain" onMouseClicked="#stationListClick" prefHeight="509.0" prefWidth="289.0">
+                           <contextMenu>
+                              <ContextMenu fx:id="stationContextMenu">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#editStationClick" text="Edit" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </ListView>
+                        <Pane prefHeight="84.0" prefWidth="289.0">
+                           <children>
+                              <Button fx:id="addTStationButton" layoutX="14.0" layoutY="39.0" mnemonicParsing="false" onAction="#addTStationFromInputClick" prefHeight="22.0" prefWidth="101.0" text="Add TrainStation" textFill="#599a3d">
+                                 <font>
+                                    <Font size="9.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="stationEditTextField" layoutX="14.0" layoutY="4.0" prefHeight="30.0" prefWidth="246.0" promptText="Enter Station Name" />
+                              <Button fx:id="addBStopButton" layoutX="122.0" layoutY="39.0" mnemonicParsing="false" onAction="#addBStopFromInputClick" prefHeight="23.0" prefWidth="79.0" text="Add BusStop" textFill="#599a3d">
+                                 <font>
+                                    <Font size="9.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+               </content>
+            </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</Pane>

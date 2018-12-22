@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="238.0" prefWidth="353.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.popupwindow.DateConfiguratorController">
+   <children>
+      <DatePicker fx:id="selectedDate" layoutX="80.0" layoutY="81.0" onAction="#selectDate" />
+      <Button fx:id="currentDayButton" layoutX="80.0" layoutY="158.0" mnemonicParsing="false" onAction="#useCurrentDay" prefHeight="27.0" prefWidth="194.0" text="Use current day" />
+      <Text layoutX="80.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Configure system date" />
+   </children>
+</AnchorPane>

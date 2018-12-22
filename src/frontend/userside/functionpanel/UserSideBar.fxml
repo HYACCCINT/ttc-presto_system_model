@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="638.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.userside.functionpanel.UserSideBarController">
+   <children>
+      <Pane layoutY="8.0" prefHeight="49.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="addCardButton" layoutX="6.0" layoutY="8.0" mnemonicParsing="false" onAction="#addCard" text="New Card">
+               <font>
+                  <Font size="12.0" />
+               </font>
+               <contextMenu>
+                  <ContextMenu fx:id="cardTypes">
+                    <items>
+                        <MenuItem fx:id="elderlyCard" mnemonicParsing="false" onAction="#addElderlyCard" text="Elderly" />
+                        <MenuItem fx:id="studentCard" mnemonicParsing="false" onAction="#addStudentCard" text="Student" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu>
+            </Button>
+            <Button fx:id="suspendButton" layoutX="90.0" layoutY="8.0" mnemonicParsing="false" onAction="#suspendCard" text="Suspend Card" textFill="RED">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <ListView fx:id="cardList" layoutY="52.0" onMouseClicked="#cardListClick" prefHeight="586.0" prefWidth="200.0">
+         <contextMenu>
+            <ContextMenu fx:id="cardContextMenu">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#trackCard" text="Track" />
+                  <MenuItem mnemonicParsing="false" onAction="#suspendCard" text="Suspend" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </ListView>
+   </children>
+</Pane>

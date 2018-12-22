@@ -1,0 +1,18 @@
+2018-08-08 - Audit Summary:
+- Total profit earned: $9.5
+- Total traffic generated: 13 (stations passed)
+- Average profit earned per station: $0.73
+- Stations with most people flow: 
+	1. Spadina Train Station: 3 (entries/exits)
+	2. Bloor-Younge Train Station: 2 (entries/exits)
+	3. Bathurst Train Station: 2 (entries/exits)
+
+2018-08-08 - Audit Summary:
+- Total profit earned: $2.5
+- Total traffic generated: 7 (stations passed)
+- Average profit earned per station: $0.36
+- Stations with most people flow: 
+	1. g Bus Stop: 1 (entries/exits)
+	2. s Train Station: 1 (entries/exits)
+	3. s Train Station: 1 (entries/exits)
+

@@ -1,0 +1,40 @@
+2018-08-07 - Audit Summary:
+- Total profit earned: $0.5
+- Total traffic generated: 1 (stations passed)
+- Average profit earned per station: $0.5
+- Stations with most people flow: 
+	1. Spadina Train Station: 1 (entries/exits)
+	2. Saint George Train Station: 1 (entries/exits)
+
+2018-08-07 - Audit Summary:
+- Total profit earned: $1.5
+- Total traffic generated: 3 (stations passed)
+- Average profit earned per station: $0.5
+- Stations with most people flow: 
+	1. Museum Train Station: 1 (entries/exits)
+	2. Dunport Train Station: 1 (entries/exits)
+
+2018-08-07 - Audit Summary:
+- Total profit earned: $2.0
+- Total traffic generated: 2 (stations passed)
+- Average profit earned per station: $1.0
+- Stations with most people flow: 
+	1. Younge St 97 Bus Stop: 1 (entries/exits)
+	2. Victoria Park 43 Bus Stop: 1 (entries/exits)
+
+2018-08-07 - Audit Summary:
+- Total profit earned: $2.5
+- Total traffic generated: 5 (stations passed)
+- Average profit earned per station: $0.5
+- Stations with most people flow: 
+	1. Spadina Train Station: 1 (entries/exits)
+	2. College Train Station: 1 (entries/exits)
+
+2018-08-07 - Audit Summary:
+- Total profit earned: $2.0
+- Total traffic generated: 2 (stations passed)
+- Average profit earned per station: $1.0
+- Stations with most people flow: 
+	1. Younge St 97 Bus Stop: 1 (entries/exits)
+	2. Victoria Park 43 Bus Stop: 1 (entries/exits)
+
